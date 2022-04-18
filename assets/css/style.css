@@ -1,0 +1,249 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+HTML {
+  scroll-behavior: smooth;
+  font-family: Roboto, Helvetica, sans-serif;
+  font-size: 15px;
+}
+
+#wrap {
+  padding: 10px;
+  background-color: #f5f6f7;
+  display: flex;
+}
+
+#sidebar-left {
+  background-color: #373839;
+  height: 900px;
+  width: 250px;
+  border-radius: 10px;
+}
+
+.sidebar-left__logo {
+  display: flex;
+  justify-content: center;
+}
+
+.nav {
+  display: flex;
+  padding: 15px 0px 15px 20px;
+}
+
+.nav:hover {
+  cursor: pointer;
+}
+
+.nav-form {
+  padding: 0 10px 0 10px;
+}
+
+.nav.choose {
+  border: 2px solid #2b2b2c;
+  padding: 0 -10px 0 -5px;
+  background-color: #2b2b2c;
+  border-radius: 10px;
+}
+
+.nav.choose p,
+.nav.choose > .icon {
+  color: yellow;
+}
+
+.nav .icon {
+  font-size: 17px;
+  color: rgb(208, 207, 207);
+}
+
+.nav .des {
+  font-size: 15px;
+  color: rgb(208, 207, 207);
+  display: flex;
+  align-items: center;
+  margin-left: 5px;
+}
+
+#main-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+#main-content .header {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 0 20px;
+}
+
+.header__left-des {
+  font-weight: 500;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.header .header__icon {
+  font-size: 20px;
+}
+
+.header__left,
+.header__right {
+  display: flex;
+}
+
+#main-content .header__right {
+  justify-content: flex-end;
+}
+
+.header__right img {
+  width: 4%;
+  margin-left: 20px;
+}
+
+#main-content .content {
+  background-color: #fff;
+  margin: 20px;
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+  border-radius: 10px;
+}
+
+.content__work-location {
+  width: 500px;
+}
+
+.content__work-location p {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  color: #807e7e;
+}
+
+.content__work-location .form {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+  width: 110%;
+}
+
+.form label {
+  display: flex;
+  align-items: center;
+}
+
+.form input {
+  padding: 10px 0 10px 10px;
+  margin: 10px;
+  width: 65%;
+  border-radius: 10px;
+  border: 1px solid rgb(211, 211, 211);
+}
+
+.dropdown {
+  padding: 10px 5px 10px 10px;
+  margin: 10px;
+  width: 65%;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px;
+  background-color: #f5f6f7;
+  box-shadow: 4px 4px 7px -3px rgba(189, 189, 189, 0.8);
+}
+
+.dropdown__selected {
+  font-size: 15px;
+  color: rgba(117, 117, 117, 1);
+}
+
+.dropdown__selected.active {
+  color: black;
+}
+
+.checked-radio {
+  display: flex;
+}
+
+.form-radio {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+  width: 110%;
+}
+
+.center-radio {
+  display: flex;
+  margin-right: 145px;
+}
+
+.center-radio .radio {
+  margin: 0 10px 0 10px;
+}
+
+.map {
+  width: 50%;
+}
+
+.map p {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  color: #807e7e;
+}
+
+.map .map__border {
+  border: 1px solid rgb(211, 211, 211);
+  margin: 20px 20px 0 0;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  height: 88%;
+  /* padding: 10px;
+  margin: 10px 30px 0 0;
+  height: 88%;
+  background: url(https://2.bp.blogspot.com/-sY1_96rCaOI/V72RfKZr1eI/AAAAAAAAAB0/UITcEdHS9kEPfVCm_ai2UYef9BLvYoGfQCLcB/s1600/Google%2BOverlays-01.png)
+    no-repeat center / cover;
+   */
+}
+
+.map__border .map__side {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* ========Button ================ */
+.footer__button {
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  --color: #eeeff0;
+  color: #29646b;
+  padding: 15px 30px;
+  width: 200px;
+  border-radius: 10px;
+  background-color: var(--color);
+  cursor: pointer;
+  font-weight: 600;
+  border: 2px solid rgb(255, 255, 255);
+  box-shadow: 7px 7px 7px -3px rgba(189, 189, 189, 0.8);
+
+  font-size: 15px;
+  transform-style: preserve-3d;
+  transition: all 0.2s linear;
+  margin: 0 10px 0 10px;
+}
+
+.button.yellow {
+  background-color: #ffeb3b;
+}
+
+.button:hover {
+  transform: rotateY(-15deg);
+}
